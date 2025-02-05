@@ -7,7 +7,11 @@ public class LinkedListTester {
 		
 		LinkedList tester = new LinkedListImpl();
 		tester.addItem("an item to add");
-		
+		tester.addItem("pls work");
+		tester.listItems();
+		System.out.println("------------");
+		tester.deleteItem("pls work");
+		tester.listItems();
 
 	}
 
