@@ -6,9 +6,9 @@ public class LinkedListTester {
         LinkedList tester = new LinkedListImpl();  
 
         // Adding items to the linked list  
-        tester.addItem("Banana");  
-        tester.addItem("Apple");  
-        tester.addItem("Cherry");  
+        tester.addItem("Dog");  
+        tester.addItem("Cat");  
+        tester.addItem("Rabbit");  
 
         // Display the list after adding items  
         System.out.println("List after adding items:");  
@@ -16,14 +16,14 @@ public class LinkedListTester {
         System.out.println("------------");  
 
         // Insert before an existing item  
-        tester.insertBefore("Apricot", "Banana");  
-        System.out.println("List after inserting Apricot before Banana:");  
+        tester.insertBefore("Hamster", "Dog");  
+        System.out.println("List after inserting Hamster before Dog:");  
         tester.listItems();  
         System.out.println("------------");  
 
         // Insert after an existing item  
-        tester.insertAfter("Blueberry", "Banana");  
-        System.out.println("List after inserting Blueberry after Banana:");  
+        tester.insertAfter("Parrot", "Dog");  
+        System.out.println("List after inserting Parrot after Dog:");  
         tester.listItems();  
         System.out.println("------------");  
 
@@ -34,9 +34,9 @@ public class LinkedListTester {
         System.out.println("------------");  
 
         // Delete an item  
-        boolean deleted = tester.deleteItem("Apple");  
-        System.out.println("Result of deleting Apple: " + deleted);  
-        System.out.println("List after deleting Apple:");  
+        boolean deleted = tester.deleteItem("Cat");  
+        System.out.println("Result of deleting Cat: " + deleted);  
+        System.out.println("List after deleting Cat:");  
         tester.listItems();  
         System.out.println("------------");  
 
