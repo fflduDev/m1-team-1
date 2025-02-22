@@ -88,7 +88,7 @@ public class StackImpl implements Stack {
         for (int i = 0; i <= top; i++) {
             System.out.print(elements[i]);
             if (i < top) {
-                System.out.print(", "); // Formatting for better readability
+                System.out.print(", ");
             }
         }
         System.out.println("]");
