@@ -65,10 +65,15 @@ public class QueueImpl implements Queue {
 		// TODO Auto-generated method stub
 		System.out.printf("[");
 		for(int i = size-1; i >=0; i--) {
-			System.out.printf(arr[i]+", ");}
-		System.out.printf("]"+"\n");
+			System.out.print(arr[i]);
+			if(i>0) {System.out.print(", ");}
+		}
+	
+		System.out.print("]"+"\n");
 		
 	}
+	
+	
 
 	@Override
 	public String peek() {
