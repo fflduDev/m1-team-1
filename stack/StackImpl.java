@@ -93,6 +93,11 @@ public class StackImpl implements Stack {
         }
         System.out.println("]");
 	}
+	public void clear(Stack s) {
+		while (!s.isEmpty()) {
+            s.pop();
+        }
+	}
  
 
 }
