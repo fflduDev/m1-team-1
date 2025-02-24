@@ -21,6 +21,10 @@ public class StackTester {
 	 	System.out.println(stack.peek());
 	 	stack.display();
 	 	
+	 	stack.clear(stack);
+	 	stack.display();
+	 	
+	 	
 	}
 
 }
