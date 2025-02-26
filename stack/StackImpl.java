@@ -69,8 +69,7 @@ public class StackImpl implements Stack {
 	@Override
 	public void setCapacity(int size) {
 		// TODO Auto-generated method stub
-		/*elements=new String[size];
-		top = -1;*/
+		
 		this.size = size;
 		
 		
@@ -79,11 +78,7 @@ public class StackImpl implements Stack {
 	@Override
 	public void display() {
 		// TODO Auto-generated method stub
-		/*System.out.printf("[");
-		for(String s:elements) {
-			System.out.printf(s+", ");
-		}
-		System.out.printf("]"+"\n");*/
+		
 		System.out.print("[");
         for (int i = 0; i <= top; i++) {
             System.out.print(elements[i]);
