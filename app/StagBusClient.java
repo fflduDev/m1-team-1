@@ -15,6 +15,7 @@ public class StagBusClient {
 		// create implementation, then
 		StagBusClient sbc=new StagBusClient();
 		System.out.println("-----L I S T  T E S T------");
+		sbc.listRunTest();  
 		
 		//listRunTestMethod...
  		
@@ -28,26 +29,44 @@ public class StagBusClient {
 		
 		sbc.QRunTest();
 		
-		
-		
-
-		//StackRunTestMethod...
-		
 	 	}
-	public void listRunTest() {
-		/*TODO
-		 * Create (insert) 4 stations
-		• List the stations
-		• Check if a station is in the list (print result)
-		• Check for a station that exists, and one
-		that doesn’t
-		• Remove a station
-		• List the stations
-		• Add a station before another station
-		• List the stations
-		• Add a station after another station
-		• Print the stations*/
-	}
+	public void listRunTest() {  
+	    LinkedList stations = new LinkedListImpl();  
+
+	    // Create (insert) 4 stations  
+	    stations.addItem("Station A");  
+	    stations.addItem("Station B");  
+	    stations.addItem("Station C");  
+	    stations.addItem("Station D");  
+
+	    // List the stations  
+	    stations.listItems();  
+
+	    // Check if a station is in the list  
+	    String checkStation1 = "Station B";  
+	    String checkStation2 = "Station E";  
+	    System.out.println("Is " + checkStation1 + " in the list? " + stations.isItemInList(checkStation1));  
+	    System.out.println("Is " + checkStation2 + " in the list? " + stations.isItemInList(checkStation2));   
+
+	    // Remove a station  
+	    boolean removed = stations.deleteItem("Station C");  
+	    System.out.println("Result of deleting Station C: " + removed);  
+	    
+	    // List the stations  
+	    System.out.println("Stations after deleting Station C:");  
+	    stations.listItems();  
+
+	    // Step 7: Add a station before another station  
+	    stations.insertBefore("Station E", "Station B");  
+	    System.out.println("Stations after inserting Station E before Station B:");  
+	    stations.listItems();  
+
+	    // Add a station after another station  
+	    stations.insertAfter("Station F", "Station B");  
+	    System.out.println("Stations after inserting Station F after Station B:");  
+	    stations.listItems();  
+	}  
+	
 	public void QRunTest() {
 		QueueImpl q=new QueueImpl(20);
 		//Create (enqueue) 6 riders by name
